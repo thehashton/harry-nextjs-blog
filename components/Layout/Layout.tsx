@@ -1,5 +1,12 @@
 import Head from "next/head";
 import Header from "../Header";
+import styled from 'styled-components';
+
+const Main = styled.main`
+  max-width: 80rem;
+  margin: auto;
+`;
+
 
 export default function Layout({ children, pageTitle, description }) {
   return (
@@ -19,7 +26,7 @@ export default function Layout({ children, pageTitle, description }) {
           font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
             sans-serif;
-          background: #333;
+          background: #272626;
           color: #fff;
           font-size: 1rem;
         }
@@ -43,10 +50,10 @@ export default function Layout({ children, pageTitle, description }) {
           padding: 0 1rem;
         }
       `}</style>
-      <main>
+      <Main>
         <Header />
         <div className="content">{children}</div>
-      </main>
+      </Main>
     </>
   );
 }

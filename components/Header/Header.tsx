@@ -3,18 +3,19 @@ import Link from "next/link";
 export default function Header() {
   return (
     <nav>
-      <h1>Harrys Blog</h1>
+      <Link href="/">
+        <a><h1>Harrys Blog</h1></a>
+      </Link>
       <div>
-        <Link href="/">
+        <Link href="/Blog">
           <a>Blog</a>
         </Link>
-        <Link href="/">
+        <Link href="/About">
           <a>About</a>
         </Link>
       </div>
       <style jsx>{`
         nav {
-          background: #444;
           width: auto;
           padding: 0 2rem;
           display: flex;
