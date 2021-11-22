@@ -1,9 +1,12 @@
----
+export const meta = {
 title: 'First',
 description: 'Getting with the blog thang',
 date: 'Nov 22, 2021',
----
+  readTime: 2
+}
 
-## My Headline 
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-First post
+## My Headline
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit. Vestibulum semper posuere magna, quis molestie mauris faucibus ut.

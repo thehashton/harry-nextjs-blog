@@ -3,8 +3,8 @@ import styles from '../styles/Home.module.css'
 import Post from "../components/Post";
 import { posts } from "../util/getAllPosts";
 import { Key } from 'react';
-
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <>
