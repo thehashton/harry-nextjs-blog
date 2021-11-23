@@ -1,33 +1,33 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { HeaderProps } from "./Header.types";
+
+const MenuLink = styled.a`
+  margin-right: 1rem;
+  text-decoration: underline;
+  
+  &:hover {
+    cursor: pointer;
+  }`;
 
 const HeaderWrapper = styled.nav`
   display: flex ;
   justify-content: space-between;
-  padding: 3rem 5vw;
+  padding: 3rem 5vw;`;
 
-  a {
-    margin-right: 1rem;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-`;
-
-const Header = () => {
+const Header = (props: HeaderProps) => {
+  const { className='' } = props;
   return (
     <HeaderWrapper>
       <Link href="/">
-        <a><h1>Harry Ghazni</h1></a>
+        <MenuLink><h1>Harry Ghazni</h1></MenuLink>
       </Link>
-      <div>
+      <div style={{display: 'flex'}}>
         <Link href="/Blog">
-          <a>Blog</a>
+          <MenuLink>Blog</MenuLink>
         </Link>
         <Link href="/About">
-          <a>About</a>
+          <MenuLink>About</MenuLink>
         </Link>
       </div>
     </HeaderWrapper>

@@ -10,10 +10,12 @@ const Container = styled.div`
 `;
 
   return (
-    <Container>
-      <Hero />
+    <>
+      <Container>
+        <Hero />
+      </Container>
       <Blog />
-    </Container>
+    </>
   )
 }
 

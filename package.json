@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -16,12 +18,19 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "reading-time": "^1.5.0",
+    "storybook-dark-mode": "^1.0.8",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@types/node": "^16.11.9",
     "@types/react": "17.0.36",
     "@types/webpack-env": "^1.16.3",
+    "babel-loader": "^8.2.3",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "typescript": "4.5.2"
