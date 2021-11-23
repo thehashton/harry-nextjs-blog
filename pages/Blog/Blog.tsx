@@ -10,15 +10,19 @@ const BlogzWrapper = styled.div`
   display: flex;
 `;
 
+const Container = styled.div`
+  padding: 5rem 0;
+`;
+
 const Blog: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Container>
       <BlogzWrapper>
         {posts.map((post: { link: Key | null | undefined; }) => (
           <Post key={post.link} post={post} />
         ))}
       </BlogzWrapper>
-    </div>
+    </Container>
   )
 }
 

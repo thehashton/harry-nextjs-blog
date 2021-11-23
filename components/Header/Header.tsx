@@ -4,7 +4,7 @@ import styled from "styled-components";
 const HeaderWrapper = styled.nav`
   display: flex ;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 3rem 5vw;
 
   a {
     margin-right: 1rem;

@@ -1,19 +1,19 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
-import Post from "../components/Post";
-import { posts } from "../util/getAllPosts";
-import React, { Key } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 import Hero from '../components/Hero';
 import Blog from './Blog';
 const Home: NextPage = () => {
 
+const Container = styled.div`
+  margin: 0 10vw;
+`;
+
   return (
-    <div className={styles.container}>
-      <>
+    <Container>
       <Hero />
       <Blog />
-      </>
-    </div>
+    </Container>
   )
 }
 

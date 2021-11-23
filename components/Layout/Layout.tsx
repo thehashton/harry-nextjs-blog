@@ -8,9 +8,9 @@ const Main = styled.main`
 `;
 
 const Content = styled.div`
-    max-width: 80rem;
-    margin: 2rem auto;
-    padding: 0;
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding: 0;
 `;
 
 
