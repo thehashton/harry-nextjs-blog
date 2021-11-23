@@ -7,6 +7,12 @@ const Main = styled.main`
   margin: auto;
 `;
 
+const Content = styled.div`
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 0;
+`;
+
 
 export default function Layout({ children, pageTitle, description }) {
   return (
@@ -44,15 +50,10 @@ export default function Layout({ children, pageTitle, description }) {
         a {
           color: #fff;
         }
-        .content {
-          max-width: 600px;
-          margin: 2rem auto;
-          padding: 0 1rem;
-        }
       `}</style>
       <Main>
         <Header />
-        <div className="content">{children}</div>
+        <Content>{children}</Content>
       </Main>
     </>
   );

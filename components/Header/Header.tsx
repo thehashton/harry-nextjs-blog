@@ -1,10 +1,26 @@
 import Link from "next/link";
+import styled from "styled-components";
 
-export default function Header() {
+const HeaderWrapper = styled.nav`
+  display: flex ;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Header = () => {
   return (
-    <nav>
+    <HeaderWrapper>
       <Link href="/">
-        <a><h1>Harrys Blog</h1></a>
+        <a><h1>Harry Ghazni</h1></a>
       </Link>
       <div>
         <Link href="/Blog">
@@ -14,23 +30,8 @@ export default function Header() {
           <a>About</a>
         </Link>
       </div>
-      <style jsx>{`
-        nav {
-          width: auto;
-          padding: 0 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 1rem;
-        }
-        nav a {
-          margin-right: 1rem;
-          text-decoration: none;
-        }
-        nav a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
-    </nav>
+    </HeaderWrapper>
   );
 }
+
+export default Header;
