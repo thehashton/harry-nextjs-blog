@@ -1,16 +1,21 @@
 import type { NextPage } from 'next'
+import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
 import Hero from '../components/Hero';
+import { Container } from '../styles/Global.styled';
 import Blog from './Blog';
-const Home: NextPage = () => {
 
-const Container = styled.div`
-  margin: 0 10vw;
-`;
+const Home: NextPage = () => {
 
   return (
     <>
+    <Head>
+      <title>My page title</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap|Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    </Head>
       <Container>
         <Hero />
       </Container>
@@ -19,4 +24,4 @@ const Container = styled.div`
   )
 }
 
-export default Home
+export default Home;

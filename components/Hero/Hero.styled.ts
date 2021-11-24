@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import styled from "styled-components";
 
 export const HeroWrapper = styled.main`
@@ -8,9 +9,29 @@ export const HeroWrapper = styled.main`
 
 export const Title = styled.h1`
   margin: 0;
+  font-weight: 100;
+  font-size: 50px;
 `;
 
 export const Subtitle = styled.p`
-  margin: 0;
-  font-size: 20px;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+`;
+
+export const BlogButton = styled(Button)`
+  font-size: 18px;
+  margin: 20px 0 0 0;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: capitalize;
+`;
+
+export const VideosButton = styled(Button)`
+  font-size: 18px;
+  margin: 20px 0 0 0;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: capitalize;
 `;

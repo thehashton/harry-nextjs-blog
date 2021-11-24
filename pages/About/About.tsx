@@ -1,11 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  padding: 5rem 0;
-  margin: 0 10vw;
-`;
+import { Container } from "../../styles/Global.styled";
 
 const About: NextPage = () => {
     return (
