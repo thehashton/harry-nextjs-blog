@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const Container = styled.div`
   padding: 5rem 0;
-  margin: 0 10vw;
+  margin: 0 8vw;
 `;
 
 const GlobalStyles = createGlobalStyle`
