@@ -1,22 +1,11 @@
 import Link from "next/link";
+import React from "react";
 import styled from "styled-components";
+import { HeaderWrapper, MenuLink } from "./Header.styled";
 import { HeaderProps } from "./Header.types";
 
-const MenuLink = styled.a`
-  margin-right: 1rem;
-  text-decoration: underline;
-  
-  &:hover {
-    cursor: pointer;
-  }`;
-
-const HeaderWrapper = styled.nav`
-  display: flex ;
-  justify-content: space-between;
-  padding: 3rem 5vw;`;
-
 const Header = (props: HeaderProps) => {
-  const { className='' } = props;
+  const { className = '' } = props;
   return (
     <HeaderWrapper>
       <Link href="/">
