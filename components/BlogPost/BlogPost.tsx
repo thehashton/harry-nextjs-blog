@@ -1,10 +1,14 @@
+import React from 'react';
+import { Container } from '../../styles/Global.styled';
 import HeadPost from '../HeadPost/'
 
 const BlogPost = ({ children, meta}) => {
   return (
     <>
-      <HeadPost meta={meta} isBlogPost />
-      <article>{children}</article>
+      <Container>
+        <HeadPost meta={meta} isBlogPost />
+        <article>{children}</article>
+      </Container>
     </>
   )
 }
