@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { HeaderWrapper, MenuLink } from "./Header.styled";
+import { HeaderWrapper, LogoLink, LogoText, MenuLink } from "./Header.styled";
 import { HeaderProps } from "./Header.types";
 
 const Header = (props: HeaderProps) => {
@@ -9,7 +9,7 @@ const Header = (props: HeaderProps) => {
   return (
     <HeaderWrapper>
       <Link href="/">
-        <MenuLink><h1>Harry Ghazni</h1></MenuLink>
+        <LogoLink style={{textDecoration: 'none'}}><LogoText>Harry Ghazni</LogoText></LogoLink>
       </Link>
       <div style={{display: 'flex'}}>
         <Link href="/Blog">
