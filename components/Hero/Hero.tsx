@@ -1,6 +1,7 @@
 import { ButtonGroup } from '@mui/material';
 import React from 'react';
-import { HeroWrapper, Title, Subtitle, BlogButton, VideosButton } from './Hero.styled';
+import { HeroWrapper, Title, Subtitle, BlogButton, VideosButton, TriangleShape, BlueTubeCircularShape } from './Hero.styled';
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -11,6 +12,12 @@ const Hero = () => {
         <BlogButton variant="contained" color="primary" href="#blog" disableRipple>Read the Blog</BlogButton>  
         <VideosButton variant="outlined" color="info" href="#videos" disableRipple>View Videos</VideosButton>  
       </ButtonGroup>
+      <TriangleShape>
+        <Image src="/Images/Site/Pyramid_Tall.png" height="400px" width="400px" />
+      </TriangleShape>
+      <BlueTubeCircularShape>
+        <Image src="/Images/Site/Tube_Short_Thin.png" height="600px" width="600px" />
+      </BlueTubeCircularShape>
     </HeroWrapper>
   )
 }

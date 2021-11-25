@@ -5,12 +5,14 @@ import Layout from '../components/Layout'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/theme.styled'
 import GlobalStyles from '../styles/Global.styled'
+import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Layout pageTitle="Blog" description="Harry's Personal Blog">
+      <Header />
+      <Layout pageTitle="Home" description="Harry's Personal Blog">
       <Component {...pageProps} />
     </Layout>
     </ThemeProvider>

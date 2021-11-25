@@ -12,6 +12,9 @@ const Header = (props: HeaderProps) => {
         <LogoLink style={{textDecoration: 'none'}}><LogoText>Harry Ghazni</LogoText></LogoLink>
       </Link>
       <div style={{display: 'flex'}}>
+      <Link href="/">
+          <MenuLink>Home</MenuLink>
+        </Link>
         <Link href="/Blog">
           <MenuLink>Blog</MenuLink>
         </Link>

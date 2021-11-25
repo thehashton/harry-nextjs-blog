@@ -3,7 +3,7 @@ export const theme = {
   colours: {
     body: '#ffffff',
     background: '#272626'
-  }
+  },
 }
 
 declare module 'styled-components' {
