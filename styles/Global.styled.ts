@@ -1,11 +1,11 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, ThemeType } from "styled-components";
 
 export const Container = styled.div`
   padding: 5rem 0;
   margin: 0 8vw;
 `;
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
   * {
     box-sizing: border-box;
   }
