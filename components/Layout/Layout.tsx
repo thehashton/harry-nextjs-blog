@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Main = styled.main`
   max-width: 80rem;
   margin: 2rem auto;
+  padding: 0 2vw;
 `;
 
 const Content = styled.div`

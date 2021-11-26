@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.nav`
   display: flex ;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 0 0 0;
+  padding: 3rem 2vw;
   max-width: 80rem;
   margin: auto;
   z-index: 9;

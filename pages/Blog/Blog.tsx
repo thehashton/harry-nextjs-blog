@@ -8,8 +8,9 @@ import Layout from "../../components/Layout";
 
 const BlogzWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 20px;
+  grid-auto-flow: dense;
 `;
 
 const Blog: NextPage = () => {
