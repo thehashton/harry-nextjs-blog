@@ -9,10 +9,9 @@ const Post = ({ post }) => {
 
   return (
     <article>
-      <HeadPost meta={meta} isBlogPost={undefined} />
-      <Link href={"/blog" + link}>
-        <a>Read more &rarr;</a>
-      </Link>
+      <HeadPost meta={meta} isBlogPost={undefined}>
+        <Link href={"/blog" + link}><a>Read more &rarr;</a></Link>
+      </HeadPost>
       <style jsx>
         {`
           article {

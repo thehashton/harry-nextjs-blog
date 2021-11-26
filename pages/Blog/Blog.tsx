@@ -7,8 +7,9 @@ import styled from "styled-components";
 import Layout from "../../components/Layout";
 
 const BlogzWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 `;
 
 const Blog: NextPage = () => {
