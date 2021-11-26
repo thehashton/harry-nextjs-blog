@@ -1,5 +1,16 @@
+import { Card, styled } from "@mui/material";
+import React from "react";
+
+export const BlogPostCard = styled(Card)`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  background-color: slategrey;
+  background: "rgba(25,25,25,0.95)"
+`;
+
 const HeadPost = ({ meta, isBlogPost }) => (
-    <>
+    <BlogPostCard>
       <h1 className={isBlogPost? 'great-title' : ''} >{meta.title}</h1>
       <div className='details'>
       {
@@ -29,7 +40,7 @@ const HeadPost = ({ meta, isBlogPost }) => (
           }
         `}
       </style>
-    </>
+    </BlogPostCard>
   )
 
   export default HeadPost;

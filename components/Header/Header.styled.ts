@@ -2,6 +2,16 @@ import styled from "styled-components";
 import { floatAnimation } from "../../styles/Animations.styled";
 import { theme } from "../../styles/theme.styled";
 
+export const HeaderWrapper = styled.nav`
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0 0 0;
+  max-width: 80rem;
+  margin: auto;
+  z-index: 9;
+`;
+
 export const MenuLink = styled.a`
   font-size: 22px;
   margin-right: 1rem;
@@ -15,9 +25,6 @@ export const MenuLink = styled.a`
 
 export const LogoLink = styled(MenuLink)`
   opacity: 1;
-  animation-name: ${floatAnimation};
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
 `;
 
 export const LogoText = styled.h1`
@@ -25,12 +32,3 @@ export const LogoText = styled.h1`
   letter-spacing: 6px;
   font-family: 'Outfit', sans-serif;
 `;
-
-export const HeaderWrapper = styled.nav`
-  display: flex ;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 0 0 0;
-  max-width: 80rem;
-  margin: auto;
-  `;

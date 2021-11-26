@@ -11,7 +11,7 @@ const Header = (props: HeaderProps) => {
       <Link href="/">
         <LogoLink style={{textDecoration: 'none'}}><LogoText>Harry Ghazni</LogoText></LogoLink>
       </Link>
-      <div style={{display: 'flex'}}>
+      <div style={{display: 'flex', zIndex: '10'}}>
       <Link href="/">
           <MenuLink>Home</MenuLink>
         </Link>

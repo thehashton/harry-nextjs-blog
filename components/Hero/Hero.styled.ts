@@ -8,6 +8,16 @@ export const HeroWrapper = styled.main`
   color: ${({theme}) => theme.colours.body};
   max-width: 80rem;
   margin: auto;
+  background: rgba(25,25,25,0.5);
+  backdrop-filter: blur(148px);
+  border-radius: 25px;
+  padding: 20px;
+`;
+
+export const HeroBorder = styled.main`
+  background: rgba(25,25,25,0.5); 
+  padding: 20px;
+  border-radius: 25px;
 `;
 
 export const Title = styled.h1`
@@ -42,22 +52,55 @@ export const VideosButton = styled(Button)`
 // SHAPES
 export const TriangleShape = styled.span`
   position: absolute;
-  top: -20%;
-  right: -7rem;
+  top: -25%;
+  right: -15%;
   z-index: -1;
   animation-name: ${floatAnimation};
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  opacity: 0.9;
+  opacity: 1;
 `;
 
 export const BlueTubeCircularShape = styled.span`
   position: absolute;
-  top: -40%;
-  right: 0;
+  top: -5%;
+  right: -10%;
   z-index: -2;
+  animation-name: ${floatAnimation};
+  animation-duration: 32s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+`;
+
+export const OrangeAtomIcosa = styled.span`
+  position: absolute;
+  bottom: -10%;
+  right: 25.5%;
+  z-index: -3;
+  animation-name: ${floatAnimation};
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0.9;
+`;
+
+export const OrangeAtomHexa = styled.span`
+  position: absolute;
+  top: -30%;
+  right: 60%;
+  z-index: 3;
+  animation-name: ${floatAnimation};
+  animation-duration: 32s;
+  animation-iteration-count: infinite;
+  opacity: 0.9;
+`;
+
+export const GreenPlatonicOcta = styled.span`
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  z-index: 3;
   animation-name: ${floatAnimation};
   animation-duration: 16s;
   animation-iteration-count: infinite;
-  opacity: 0.9;
+  opacity: 1;
 `;
