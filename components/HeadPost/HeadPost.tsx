@@ -8,7 +8,7 @@ export const BlogPostCard = styled(Card)`
   color: white;
 `;
 
-const HeadPost = ({ meta, isBlogPost, children }) => (
+const HeadPost = ({ meta, isBlogPost }) => (
     <BlogPostCard>
       <h1 className={isBlogPost? 'great-title' : ''} >{meta.title}</h1>
       <div className='details'>
