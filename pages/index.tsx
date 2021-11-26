@@ -1,11 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import React from 'react';
-import styled from 'styled-components';
 import Hero from '../components/Hero';
 import { HeroBorder } from '../components/Hero/Hero.styled';
 import Layout from '../components/Layout';
-import { Container } from '../styles/Global.styled';
 import Blog from './Blog';
 
 const Home: NextPage = () => {
