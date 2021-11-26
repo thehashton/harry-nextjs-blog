@@ -19,7 +19,6 @@ const HeadPost = ({ meta, isBlogPost }) => (
         <span role='img' aria-label='one coffee'>
           ☕ {meta.readTime + ' min read'}
         </span>
-        <div style={{marginTop: "30px"}}>{children}</div>
       </div>
       <style jsx>
         {`
