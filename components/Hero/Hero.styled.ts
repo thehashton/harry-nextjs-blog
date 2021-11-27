@@ -50,7 +50,15 @@ export const VideosButton = styled(Button)`
 `;
 
 // SHAPES
-export const TriangleShape = styled.span`
+const floatingShape = styled.span`
+  display: none;
+
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
+`;
+
+export const TriangleShape = styled(floatingShape)`
   position: absolute;
   top: -25%;
   right: -15%;
@@ -61,7 +69,7 @@ export const TriangleShape = styled.span`
   opacity: 1;
 `;
 
-export const BlueTubeCircularShape = styled.span`
+export const BlueTubeCircularShape = styled(floatingShape)`
   position: absolute;
   top: -5%;
   right: -10%;
@@ -72,7 +80,7 @@ export const BlueTubeCircularShape = styled.span`
   opacity: 1;
 `;
 
-export const OrangeAtomIcosa = styled.span`
+export const OrangeAtomIcosa = styled(floatingShape)`
   position: absolute;
   bottom: -10%;
   right: 25.5%;
@@ -83,7 +91,7 @@ export const OrangeAtomIcosa = styled.span`
   opacity: 0.9;
 `;
 
-export const OrangeAtomHexa = styled.span`
+export const OrangeAtomHexa = styled(floatingShape)`
   position: absolute;
   top: -30%;
   right: 60%;
@@ -94,7 +102,7 @@ export const OrangeAtomHexa = styled.span`
   opacity: 0.9;
 `;
 
-export const GreenPlatonicOcta = styled.span`
+export const GreenPlatonicOcta = styled(floatingShape)`
   position: absolute;
   bottom: 5%;
   right: 10%;

@@ -11,6 +11,7 @@ const BlogzWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 20px;
   grid-auto-flow: dense;
+  margin-top: 60px;
 `;
 
 const Blog: NextPage = () => {

@@ -8,15 +8,10 @@ const Post = ({ post }) => {
   } = post;
 
   return (
-    <article>
-      <HeadPost meta={meta} isBlogPost={undefined} />
-      <style jsx>
-        {`
-          article {
-            margin-bottom: 3rem;
-          }
-        `}
-      </style>
+    <article style={{zIndex: '-2'}}>
+      <Link href={"/blog" + link}>
+        <a><HeadPost meta={meta} isBlogPost={undefined} /></a>
+      </Link>
     </article>
   );
 };
