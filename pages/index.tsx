@@ -4,7 +4,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { HeroBorder } from '../components/Hero/Hero.styled';
 import Layout from '../components/Layout';
-import Blog from './Blog';
+import BlogPosts from './Blog/BlogPosts';
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <Hero />
         </HeroBorder>
       </Layout>
-      <Blog />
+      <BlogPosts />
     </>
   )
 }

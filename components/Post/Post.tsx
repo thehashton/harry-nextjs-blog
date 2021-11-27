@@ -8,8 +8,8 @@ const Post = ({ post }) => {
   } = post;
 
   return (
-    <article style={{zIndex: '-2'}}>
-      <Link href={"/blog" + link}>
+    <article style={{zIndex: '2'}}>
+      <Link href={"/blog"+link}>
         <a><HeadPost meta={meta} isBlogPost={undefined} /></a>
       </Link>
     </article>

@@ -23,7 +23,12 @@ export const HeroBorder = styled.main`
 export const Title = styled.h1`
   margin: 0;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 40px;
+  max-width: 60rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const Subtitle = styled.p`
