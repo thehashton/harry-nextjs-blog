@@ -21,8 +21,8 @@ const Home: NextPage = () => {
           <Hero />
         </HeroBorder>
       </Layout>
-      <Footer />
       <BlogPosts />
+      <Footer />
     </>
   )
 }
