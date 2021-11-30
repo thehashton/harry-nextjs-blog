@@ -23,17 +23,16 @@ export default function Layout({ children, pageTitle, description }) {
         <title>{pageTitle}</title>
       </Head>
       <motion.div
-      initial="initial"
-      animate="animate"
-      variants={{
-        initial: {
-          opacity: 0,
-        },
-        animate: {
-          opacity: 1,
-        },
-      }}
-    >
+        initial="initial"
+        animate="animate"
+        variants={{
+          initial: {
+            opacity: 0,
+          },
+          animate: {
+            opacity: 1,
+          },}}
+          >
       <Main>
         <Content>{children}</Content>
       </Main>
