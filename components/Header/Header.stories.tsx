@@ -1,6 +1,5 @@
 import React from "react";
 import Header from ".";
-import { HeaderProps } from "./Header.types";
 
 export default {
     children: '',
@@ -8,18 +7,14 @@ export default {
     component: Header,
   };
   
-  const Template = (args: HeaderProps) => (
+  const Template = (args) => (
     <Header {...args}><></></Header>
   );
   
-  const props = {
-    defaultProps: (): HeaderProps => ({
-      className: 'header',
-    }),
-  };
+  const props = {};
   
   export const HeaderStory: any = Template.bind({});
-  const defaultProps = props.defaultProps();
+  const defaultProps = props;
   HeaderStory.storyName = 'Default';
   HeaderStory.args = {
     ...defaultProps,
