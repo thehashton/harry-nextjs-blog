@@ -6,15 +6,16 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/theme.styled'
 import GlobalStyles from '../styles/Global.styled'
 import Header from '../components/Header'
+import { AnimateSharedLayout, motion } from 'framer-motion'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
-      <Layout pageTitle="Home" description="Harry's Personal Blog">
-      <Component {...pageProps} />
-    </Layout>
+        <Layout pageTitle="Home" description="Harry's Personal Blog">
+          <Component {...pageProps} />
+        </Layout>
     </ThemeProvider>
   )
 }

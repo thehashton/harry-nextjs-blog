@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from 'styled-components';
+import { AnimatePresence, motion } from "framer-motion";
 
 const Main = styled.main`
   max-width: 80rem;
@@ -12,7 +13,6 @@ const Content = styled.div`
   padding: 0;
 `;
 
-
 export default function Layout({ children, pageTitle, description }) {
   return (
     <>
@@ -22,9 +22,22 @@ export default function Layout({ children, pageTitle, description }) {
         <meta name="Description" content={description}></meta>
         <title>{pageTitle}</title>
       </Head>
+      <motion.div
+      initial="initial"
+      animate="animate"
+      variants={{
+        initial: {
+          opacity: 0,
+        },
+        animate: {
+          opacity: 1,
+        },
+      }}
+    >
       <Main>
         <Content>{children}</Content>
       </Main>
+      </motion.div>
     </>
   );
 }
