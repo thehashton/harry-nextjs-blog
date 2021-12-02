@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { floatAnimation } from "../../styles/Animations.styled";
-import { theme } from "../../styles/theme.styled";
 
 export const HeaderWrapper = styled.nav`
   display: flex ;

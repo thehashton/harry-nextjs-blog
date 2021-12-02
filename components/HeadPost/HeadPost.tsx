@@ -10,14 +10,14 @@ export const BlogPostCard = styled(Card)`
 
 const HeadPost = ({ meta, isBlogPost }) => (
     <BlogPostCard>
-      <h1 className={isBlogPost? 'great-title' : ''} >{meta.title}</h1>
+      <h1 className={isBlogPost? 'great-title' : ''} >{meta?.title}</h1>
       <div className='details'>
       {
-          isBlogPost? null: <p>{meta.description}</p>
+          isBlogPost? null: <p>{meta?.description}</p>
       }  
-        <span>{meta.date}</span>
+        <span>{meta?.date}</span>
         <span role='img' aria-label='one coffee'>
-          ☕ {meta.readTime + ' min read'}
+          ☕ {meta?.readTime + ' min read'}
         </span>
       </div>
       <style jsx>

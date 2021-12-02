@@ -3,7 +3,7 @@ import { SpicyTextWrapper } from './SpicyText.styled';
 
 const SpicyText = ({children}) => {
   return (
-    <SpicyTextWrapper>{children}</SpicyTextWrapper>
+    <SpicyTextWrapper className="fire burn">{children}</SpicyTextWrapper>
   )
 }
 
