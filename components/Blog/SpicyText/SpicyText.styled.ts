@@ -26,7 +26,6 @@ export const SpicyTextWrapper = styled.i`
   background-image: -o-linear-gradient(top, #111, #0c0c0c);
   font-family: 'Amethysta', serif;
   text-align: center;
-  text-transform: uppercase;
   white-space:nowrap;
 
   &.fire {
