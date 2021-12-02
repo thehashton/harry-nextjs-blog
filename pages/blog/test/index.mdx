@@ -1,4 +1,8 @@
 import BlogPost from '../../../components/BlogPost';
+import SpicyText from '../../../components/Blog/SpicyText';
+import CodeSnippet from '../../../components/Blog/CodeSnippet';
+import Playground from '../../../components/Blog/Playground';
+import Highlight, { defaultProps } from "prism-react-renderer";
 
 export const meta = {
     title: 'First',
@@ -11,7 +15,31 @@ export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
 ## My Headline
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit. Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+Lorem <SpicyText>ipsum</SpicyText> dolor sit amet, consectetur adipiscing elit. Quisque maximus pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit. Vestibulum semper posuere magna, quis molestie mauris faucibus ut.
+
+<CodeSnippet language="jsx" exampleCode={
+`<h1>test</h1>`
+} />
+
+<Playground defaultEditorTab="markup" id="test"   
+markup={`
+<div class="wrapper">
+  <h2>Hello World</h2>
+</div>
+  `}
+  cssCode={`
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+\n\
+body {
+  height: 100vh;
+  background: silver;
+}`}
+javaScript={`
+console.log('test');
+`} />
 
 If all of this may seem confusing, but it's accurate! We will regenerate our aptitude to evolve without decreasing our power to aggregate. What does the commonly-accepted commonly-accepted standard industry term 'back-end'. Do you have a infinitely reconfigurable scheme for coping with emerging methodologies? Is it more important for something to be best-of-breed? The portals factor can be delivered as-a-service to wherever it’s intended to go – mobile. Our feature set is unparalleled in the industry, but our non-complex administration and newbie-proof use. 
 
