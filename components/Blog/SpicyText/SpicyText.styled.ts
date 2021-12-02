@@ -27,7 +27,6 @@ export const SpicyTextWrapper = styled.i`
   font-family: 'Amethysta', serif;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .3em;
   white-space:nowrap;
 
   &.fire {
