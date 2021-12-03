@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HomeIcon from '@mui/icons-material/Home';
 
 export const HeaderWrapper = styled.nav`
   display: flex ;
@@ -8,6 +9,14 @@ export const HeaderWrapper = styled.nav`
   max-width: 80rem;
   margin: auto;
   z-index: 9;
+`;
+
+export const HomePageIcon = styled(HomeIcon)`
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const MenuLink = styled.a`

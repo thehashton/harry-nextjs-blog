@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle, ThemeType } from "styled-components";
 
 export const Container = styled.div`
-  padding: 5rem 0;
+  padding: 0;
   margin: 0 3vw;
 `;
 
@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
     padding: 0;
     background: ${({theme}) => theme.colours.background};
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   h1,

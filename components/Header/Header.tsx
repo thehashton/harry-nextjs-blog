@@ -1,6 +1,7 @@
+import HomeIcon from '@mui/icons-material/Home';
 import Link from "next/link";
 import React from "react";
-import { HeaderWrapper, LogoLink, LogoText, MenuLink } from "./Header.styled";
+import { HeaderWrapper, HomePageIcon, LogoLink, LogoText, MenuLink } from "./Header.styled";
 
 const Header = () => {
   
@@ -11,9 +12,9 @@ const Header = () => {
           <LogoText>Harry Ghazni</LogoText>
         </LogoLink>
       </Link>
-      <div style={{display: 'flex', zIndex: '10'}}>
+      <div style={{display: 'flex', alignItems: 'center', zIndex: '10'}}>
       <Link href="/">
-          <MenuLink>Home</MenuLink>
+          <MenuLink><HomePageIcon sx={{fontSize: "30px"}} /></MenuLink>
         </Link>
         <Link href="/Courses">
           <MenuLink>Courses</MenuLink>
