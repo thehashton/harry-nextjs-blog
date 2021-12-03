@@ -22,30 +22,31 @@ const spin = keyframes`
 `;
 
 export const Wrapper = styled.span`
-display: inline-block;
-position: relative;
+  display: inline-block;
+  position: relative;
+  max-height: 10px;
 `;
 
 export const SparkleWrapper = styled.span`
-position: absolute;
-display: block;
+  position: absolute;
+  display: block;
 
-@media (prefers-reduced-motion: no-preference) {
-  animation: ${comeInOut} 700ms forwards;
-}
+  @media (prefers-reduced-motion: no-preference) {
+    animation: ${comeInOut} 2000ms forwards;
+  }
 `;
 
 export const SparkleSvg = styled.svg`
-display: block;
+  display: block;
 
-@media (prefers-reduced-motion: no-preference) {
-  animation: ${spin} 1000ms linear;
-}
+  @media (prefers-reduced-motion: no-preference) {
+    animation: ${spin} 1000ms linear;
+  }
 `;
 
 export const SparklesChildWrapper = styled.strong`
-position: relative;
-z-index: 1;
-font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
 `;
 
