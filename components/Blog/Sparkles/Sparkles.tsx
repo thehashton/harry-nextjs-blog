@@ -23,7 +23,7 @@ const generateSparkle = color => {
 
 const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
   const [sparkles, setSparkles] = React.useState(() => {
-    return range(3).map(() => generateSparkle(color));
+    return range(3, 3).map(() => generateSparkle(color));
   });
   const prefersReducedMotion = usePrefersReducedMotion();
   useRandomInterval(
