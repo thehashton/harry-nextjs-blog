@@ -4,8 +4,9 @@ import React from "react";
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const useRandomInterval = (callback, minDelay, maxDelay) => {
-  const timeoutId = React.useRef(null);
+  const timeoutId = React.useRef(0);
   const savedCallback = React.useRef(callback);
+  
   React.useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
