@@ -20,15 +20,33 @@ export const HomePageIcon = styled(HomeIcon)`
 `;
 
 export const MenuLink = styled.a`
+  position: relative;
   font-size: 22px;
   margin-right: 1rem;
   opacity: 0.6;
   color: ${({theme}) => theme.colours.body};
+  text-decoration: none;
   
   &:hover {
-    text-decoration: underline;
     cursor: pointer;
+
+    >span {
+      width: 100%;
+    }
 }`;
+
+export const MenuUnderline = styled.span`
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px solid;
+  transition: width .3s;
+
+  &:hover {
+    width: 100%;
+  }
+`;
 
 export const LogoLink = styled(MenuLink)`
   opacity: 1;

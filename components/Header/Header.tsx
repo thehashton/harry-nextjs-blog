@@ -1,7 +1,7 @@
 import HomeIcon from '@mui/icons-material/Home';
 import Link from "next/link";
 import React from "react";
-import { HeaderWrapper, HomePageIcon, LogoLink, LogoText, MenuLink } from "./Header.styled";
+import { HeaderWrapper, HomePageIcon, LogoLink, LogoText, MenuLink, MenuUnderline } from "./Header.styled";
 
 const Header = () => {
   
@@ -17,13 +17,13 @@ const Header = () => {
           <MenuLink><HomePageIcon sx={{fontSize: "30px"}} /></MenuLink>
         </Link>
         <Link href="/Courses">
-          <MenuLink>Courses</MenuLink>
+          <MenuLink>Courses<MenuUnderline /></MenuLink>
         </Link>
         <Link href="/Blog">
-          <MenuLink>Blog</MenuLink>
+          <MenuLink>Blog<MenuUnderline /></MenuLink>
         </Link>
         <Link href="/About">
-          <MenuLink>About</MenuLink>
+          <MenuLink>About<MenuUnderline /></MenuLink>
         </Link>
       </div>
     </HeaderWrapper>
