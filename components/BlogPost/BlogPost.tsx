@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Container } from '../../styles/Global.styled';
+import Footer from '../Footer';
 import HeadPost from '../HeadPost/'
 
 const BlogPost = ({ children, meta}) => {
