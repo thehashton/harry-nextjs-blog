@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
+import { MenuUnderline } from '../Header/Header.styled';
 import { FooterWrapper } from './Footer.styled';
 
 const Footer = () => {
@@ -18,20 +20,20 @@ const Footer = () => {
           </ul>
           <ul className="general">
             <b>General</b>
-            <li>My Mission</li>
-            <li>Privacy policy</li>
-            <li>Terms of use</li>
-            <li>Code of conduct</li>
+            <li><Link href="/MyMission">My Mission</Link><MenuUnderline /></li>
+            <li><Link href="/PrivacyPolicy">Privacy policy</Link><MenuUnderline /></li>
+            <li><Link href="/Terms">Terms of use</Link><MenuUnderline /></li>
+            <li><Link href="/CodeOfConduct">Code of conduct</Link><MenuUnderline /></li>
           </ul>
         </div>
         <div className="bottom">
         <ul className="sitemap">
             <b>Sitemap</b>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Blog</li>
-            <li>About</li>
-            <li>Sitemap.xml</li>
+            <li><Link href="/">Home</Link><MenuUnderline /></li>
+            <li><Link href="/Courses">Courses</Link><MenuUnderline /></li>
+            <li><Link href="/Blog">Blog</Link><MenuUnderline /></li>
+            <li><Link href="/About">About</Link><MenuUnderline /></li>
+            <li><Link href="/Sitemap">Sitemap.xml</Link><MenuUnderline /></li>
           </ul>
         </div>
       </div>

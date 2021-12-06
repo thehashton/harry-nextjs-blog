@@ -41,7 +41,15 @@ export const FooterWrapper = styled.footer`
     padding-left: 0;
 
     li {
+      width: fit-content;
+      position: relative;
       padding: 0.5rem 0;
+
+      &:hover {
+        >span {
+          width: 105%;
+        }
+      }
     }
   }
 
