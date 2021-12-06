@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 3rem 2vw;
-  max-width: 80rem;
+  max-width: 95rem;
   margin: auto;
   z-index: 9;
 `;
