@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
     background: ${({theme}) => theme.colours.background};
     color: #fff;
     font-size: 1.2rem;
+    overflow-x: hidden;
   }
 
   h1,
