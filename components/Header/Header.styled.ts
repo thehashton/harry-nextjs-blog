@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.nav`
   padding: 3rem 2vw;
   max-width: 95rem;
   margin: auto;
-  z-index: 9;
+  z-index: 99;
 `;
 
 export const HomePageIcon = styled(HomeIcon)`
