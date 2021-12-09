@@ -23,8 +23,8 @@ export const MenuLink = styled.a`
   position: relative;
   font-size: 22px;
   margin-right: 1rem;
-  opacity: 0.6;
-  color: ${({theme}) => theme.colours.body};
+  opacity: 1;
+  color: ${({theme}) => theme.colours.bodyFaint};
   text-decoration: none;
   
   &:hover {

@@ -2,6 +2,7 @@
 export const theme = {
   colours: {
     body: '#ffffff',
+    bodyFaint: '#adadad',
     background: '#272626'
   },
 }

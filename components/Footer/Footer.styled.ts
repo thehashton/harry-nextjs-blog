@@ -6,10 +6,10 @@ export const FooterWrapper = styled.footer`
   font-family: 'Outfit', sans-serif;
   border-top: 1px solid rgb(188 184 184 / 50%);
   margin-top: 10rem;
-  opacity: 0.7;
   max-width: 76rem;
   margin: auto;
   margin-top: 10rem;
+  color: ${({theme}) => theme.colours.bodyFaint};
 ;
 
   .content {
