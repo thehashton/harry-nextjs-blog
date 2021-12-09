@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 
-
 export const HeroVideoContainer = styled.div`
   display: block;
 `;

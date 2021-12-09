@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import BlogPosts from "./BlogPosts";
 import Image from 'next/image'
-import { BlogBlueTubeCircularShape, BlogHero, BlogHeroText } from "./Blog.styled";
+import { BlogBlueTubeCircularShape, BlogHero, BlogHeroText } from "../../styles/Pages/Blog/Blog.styled";
 
 const Blog: NextPage = () => {
   return (

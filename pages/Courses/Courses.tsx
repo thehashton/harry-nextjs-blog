@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import React from "react";
 import Layout from "../../components/Layout";
-import { CourseHeader, CourseHeroText, CoursesTriangleShape } from "./Courses.styled";
 import Image from 'next/image'
+import { CourseHeader, CourseHeroText, CoursesTriangleShape } from "../../styles/Pages/Courses/Courses.styled";
 
 const Courses: NextPage = () => {
     return (

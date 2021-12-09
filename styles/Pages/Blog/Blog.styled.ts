@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { floatingShape } from "../../components/Hero/Hero.styled";
-import { floatAnimation } from "../../styles/Animations.styled";
+import { floatingShape } from "../../../components/Hero/Hero.styled";
+import { floatAnimation } from "../../Animations.styled";
 
 export const BlogHero = styled.div`
   display: flex;
