@@ -55,7 +55,7 @@ export const VideosButton = styled(Button)`
 `;
 
 // SHAPES
-const floatingShape = styled.span`
+export const floatingShape = styled.span`
   display: none;
 
   @media screen and (min-width: 900px) {
