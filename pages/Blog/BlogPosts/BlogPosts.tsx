@@ -18,7 +18,7 @@ const BlogzWrapper = styled.div`
 export const BlogPosts = () => {
   return (
     <BlogzWrapper>
-      {posts.map((post: { link: Key | null | undefined; }) => (
+      {posts.slice(0,6).map((post: { link: Key | null | undefined; }) => (
         <Post key={post.link} post={post} />
       ))}
     </BlogzWrapper>
