@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import React from 'react';
-import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import { HeroBorder } from '../components/Hero/Hero.styled';
-import Layout from '../components/Layout';
 import BlogPosts from './Blog/BlogPosts';
 
 const Home: NextPage = () => {

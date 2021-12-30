@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styled from 'styled-components';
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
-import Footer from "../Footer";
 
 const Main = styled.main`
   max-width: 80rem;
