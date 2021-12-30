@@ -1,12 +1,12 @@
 export const CourseData = [
     {
-      title: 'Accessibility',
+      title: 'Accessibility Basics',
       description: 'An entire course on why Accessibility matters.',
       link: '#link1'
     },
     {
-      title: 'A React, Storybook Component Library',
-      description: 'description2',
+      title: 'Create a React, Storybook Component Library',
+      description: 'Learn how to create an industry standard UI Kit/Component Library',
       link: '#link2'
     },
     {
