@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import Image from 'next/image'
 import { CourseCards, CourseHeader, CourseHeroText, CoursesTriangleShape } from "../../styles/Pages/Courses/Courses.styled";
 import Card from "../../components/Card";
-import CourseData from "./CourseData";
+import CourseData from "../../Data/Course/CourseData";
 
 const Courses: NextPage = () => {
     return (
