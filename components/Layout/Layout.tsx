@@ -38,7 +38,6 @@ export default function Layout({ children, pageTitle, description }) {
       <Main>
         <Content>{children}</Content>
       </Main>
-      <Footer />
       </motion.div>
     </>
   );
