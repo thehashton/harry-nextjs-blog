@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="content">
         <div className="top">
           <div className="bio">
-            <h2>Harry Ghazni</h2>
+            <h2>Harry Ashton</h2>
             <p>UI/Accessibility engineer and educator for making our world better through the power of the web</p>
           </div>
           <ul className="contact">
