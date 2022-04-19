@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styled from 'styled-components';
-import { motion } from "framer-motion";
+const { motion } = require("framer-motion");
 import React from "react";
 
 const Main = styled.main`
