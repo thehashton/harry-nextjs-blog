@@ -15,8 +15,8 @@ const Footer = () => {
           <ul className="contact">
             <b>Contact</b>
             <li>Email Harry</li>
-            <li>Call Harry</li>
-            <li>Office hours</li>
+            {/* <li>Call Harry</li> */}
+            {/* <li>Office hours</li> */}
           </ul>
           <ul className="general">
             <b>General</b>
