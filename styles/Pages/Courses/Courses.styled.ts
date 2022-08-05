@@ -9,6 +9,7 @@ export const CourseHeader = styled.div`
 
 export const CourseHeroText = styled.div`
   display: block;
+  max-width: 72.5%;
 
   h1 {
     font-weight: 600;
@@ -35,4 +36,14 @@ export const CoursesTriangleShape = styled(floatingShape)`
   opacity: 1;
   width: 20rem;
   height: 20rem;
+`;
+
+export const CourseCards = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    margin: 0 auto;
+    max-width: 80rem;
+    margin-top: 4rem;
 `;

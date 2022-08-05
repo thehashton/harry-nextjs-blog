@@ -9,7 +9,7 @@ const Header = () => {
     <HeaderWrapper>
       <Link href="/">
         <LogoLink style={{textDecoration: 'none'}}>
-          <LogoText>Harry Ghazni</LogoText>
+          <LogoText>Harry Ashton</LogoText>
         </LogoLink>
       </Link>
       <div style={{display: 'flex', alignItems: 'center', zIndex: '10'}}>

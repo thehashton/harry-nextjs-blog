@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styled from 'styled-components';
-import { AnimatePresence, motion } from "framer-motion";
+const { motion } = require("framer-motion");
 import React from "react";
-import Footer from "../Footer";
 
 const Main = styled.main`
   max-width: 80rem;
@@ -38,7 +37,6 @@ export default function Layout({ children, pageTitle, description }) {
       <Main>
         <Content>{children}</Content>
       </Main>
-      <Footer />
       </motion.div>
     </>
   );

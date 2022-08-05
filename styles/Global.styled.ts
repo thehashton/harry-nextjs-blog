@@ -10,6 +10,10 @@ const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
     box-sizing: border-box;
   }
 
+  html, body {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'Outfit', sans-serif;
     margin: 0;

@@ -3,6 +3,7 @@ import Post from "../../../components/Post";
 import styled from "styled-components";
 import { posts } from "../../../util/getAllPosts";
 import { Key } from 'react';
+const readingTime = require('reading-time');
 
 const BlogzWrapper = styled.div`
   display: grid;
@@ -15,11 +16,15 @@ const BlogzWrapper = styled.div`
   padding: 2rem 1rem 0 1rem;
 `;
 
+
 export const BlogPosts = () => {
   return (
     <BlogzWrapper>
-      {posts.slice(0,6).map((post: { link: Key | null | undefined; }) => (
-        <Post key={post.link} post={post} />
+      {posts.slice(0,6).map((post: { link: Key | null | undefined; }, id: number) => (
+        <div key={id}>
+          <Post key={post.link} post={post} />
+          <p>READING TIME: {readingTime(post).time}</p>
+        </div>
       ))}
     </BlogzWrapper>
   )

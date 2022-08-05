@@ -1,6 +1,9 @@
 {
   "name": "harry-nextjs",
   "private": true,
+  "engines": {
+    "node": ">=12.22.4"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

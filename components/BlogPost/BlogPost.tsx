@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+const { motion } = require("framer-motion");
 import React from 'react';
 import { Container } from '../../styles/Global.styled';
 import Footer from '../Footer';

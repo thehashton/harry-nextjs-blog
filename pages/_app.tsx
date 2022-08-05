@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/theme.styled'
 import GlobalStyles from '../styles/Global.styled'
 import Header from '../components/Header'
-import { AnimateSharedLayout, motion } from 'framer-motion'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Header />
         <Layout pageTitle="Home" description="Harry's Personal Blog">
           <Component {...pageProps} />
+          <Footer />
         </Layout>
     </ThemeProvider>
   )
