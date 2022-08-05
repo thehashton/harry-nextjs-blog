@@ -23,7 +23,7 @@ export const BlogPosts = () => {
       {posts.slice(0,6).map((post: { link: Key | null | undefined; }, id: number) => (
         <div key={id}>
           <Post key={post.link} post={post} />
-          <p>READING TIME: {readingTime(post).time}</p>
+          {/* <p>READING TIME: {readingTime(post).time}</p> */}
         </div>
       ))}
     </BlogzWrapper>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { MenuUnderline } from '../Header/Header.styled';
 import { FooterWrapper } from './Footer.styled';
+import common from '../../common';
 
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
       <div className="content">
         <div className="top">
           <div className="bio">
-            <h2>Harry Ashton</h2>
-            <p>UI/Accessibility engineer and educator for making our world better through the power of the web</p>
+            <h2>{common.name}</h2>
+            <p>{common.role} and educator for making our world better through the power of the web</p>
           </div>
           <ul className="contact">
             <b>Contact</b>
@@ -37,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="copyright">All rights reserved © Harry Ghazni {new Date().getFullYear()}</p>
+      <p className="copyright">All rights reserved © {common.role} {new Date().getFullYear()}</p>
     </FooterWrapper>
   )
 }

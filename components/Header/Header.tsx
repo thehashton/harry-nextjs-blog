@@ -2,6 +2,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import Link from "next/link";
 import React from "react";
 import { HeaderWrapper, HomePageIcon, LogoLink, LogoText, MenuLink, MenuUnderline } from "./Header.styled";
+import common from '../../common';
 
 const Header = () => {
   
@@ -9,7 +10,7 @@ const Header = () => {
     <HeaderWrapper>
       <Link href="/">
         <LogoLink style={{textDecoration: 'none'}}>
-          <LogoText>Harry Ashton</LogoText>
+          <LogoText>{common.name}</LogoText>
         </LogoLink>
       </Link>
       <div style={{display: 'flex', alignItems: 'center', zIndex: '10'}}>
