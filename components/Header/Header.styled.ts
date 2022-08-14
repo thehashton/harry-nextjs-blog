@@ -3,12 +3,17 @@ import HomeIcon from '@mui/icons-material/Home';
 
 export const HeaderWrapper = styled.nav`
   display: flex ;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 3rem 2vw;
   max-width: 95rem;
   margin: auto;
   z-index: 99;
+  
+  @media screen and (min-width: 620px) {
+    justify-content: space-between;
+  }
 `;
 
 export const HomePageIcon = styled(HomeIcon)`

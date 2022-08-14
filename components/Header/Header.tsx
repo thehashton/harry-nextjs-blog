@@ -1,4 +1,3 @@
-import HomeIcon from '@mui/icons-material/Home';
 import Link from "next/link";
 import React from "react";
 import { HeaderWrapper, HomePageIcon, LogoLink, LogoText, MenuLink, MenuUnderline } from "./Header.styled";

@@ -1,5 +1,6 @@
 const common = {
   name: 'Harry Ashton',
+  nickname: 'TheHashton',
   role: 'UI/Accessibility engineer',
   social: {
     twitter: 'https://twitter.com/TheHashton',
