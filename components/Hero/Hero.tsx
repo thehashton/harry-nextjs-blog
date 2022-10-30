@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <HeroWrapper>
         <Title>Helping make the world a better place through considered <span style={{color: "#6195f5"}}>UI</span>, <span style={{color: "#6195f5"}}>empathy</span> and <span style={{color: "#6195f5"}}>teaching</span>.</Title>
-        <Subtitle>I'm a UI / Accessibility Engineer <b style={{color: "orange"}}>@THRIVE.</b></Subtitle>
+        <Subtitle>I'm a Senior Frontend Developer <b style={{color: "orange"}}>@EO.</b></Subtitle>
       <ButtonGroup style={{marginTop: '40px'}}>
         <BlogButton variant="contained" color="primary" href="#blog" disableRipple>Read the Blog</BlogButton>  
         <VideosButton variant="contained" color="info" href="#videos" disableRipple>Watch Videos</VideosButton>  
